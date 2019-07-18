@@ -215,7 +215,7 @@ source ~/.bashrc
 
 出现效果证明caffe配置成功
 
-![1563355089](./readme_image/1563355089(1).png)
+![](./readme_image/1563355089(1).png)
 
 h. 创建 **$CAFFE_ROOT/data/VOC0712** ，在这个目录下解压三个VOC数据集，提供了下载的路径
 
@@ -242,7 +242,7 @@ cp -r examples/* ../../examples
 
 在**$CAFFE_ROOT/examples/VOC0712** 存在这两个文件
 
-![1563357958(./readme_image/1563357958(1).png)](.\readme_image\1563357958(1).png)
+![](.\readme_image\1563357958(1).png)
 
 ```
 cd $CAFFE_ROOT/examples/VOC0712_trainval_lmdb
@@ -250,7 +250,7 @@ cd $CAFFE_ROOT/examples/VOC0712_trainval_lmdb
 
 出现这两个文件，证明转换成功
 
-![1563358695(./readme_image/1563358695(1).png)](.\readme_image\1563358695(1).png)
+![](.\readme_image\1563358695(1).png)
 
 
 
