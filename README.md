@@ -215,7 +215,7 @@ source ~/.bashrc
 
 出现效果证明caffe配置成功
 
-![1563355089(C:/Users/baoch/Desktop/summer_pro/%E6%96%87%E6%A1%A3/caffe/caffe/img/1563355089(1).png)](.\readme_image\1563355089(1).png)
+![1563355089](./readme_image/1563355089(1).png)
 
 h. 创建 **$CAFFE_ROOT/data/VOC0712** ，在这个目录下解压三个VOC数据集，提供了下载的路径
 
