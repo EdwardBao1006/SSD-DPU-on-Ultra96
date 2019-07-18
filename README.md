@@ -12,7 +12,7 @@
 
 https://www.xilinx.com/products/design-tools/ai-inference/ai-developer-hub.html#overview
 
-![](.\readme_image\image_1.png)
+![](./readme_image/image_1.png)
 
 （2）用烧录软件进行镜像烧录
 
