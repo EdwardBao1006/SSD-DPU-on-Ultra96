@@ -242,7 +242,7 @@ cp -r examples/* ../../examples
 
 在**$CAFFE_ROOT/examples/VOC0712** 存在这两个文件
 
-![](.\readme_image\1563357958(1).png)
+![](./readme_image/1563357958(1).png)
 
 ```
 cd $CAFFE_ROOT/examples/VOC0712_trainval_lmdb
@@ -250,7 +250,7 @@ cd $CAFFE_ROOT/examples/VOC0712_trainval_lmdb
 
 出现这两个文件，证明转换成功
 
-![](.\readme_image\1563358695(1).png)
+![](./readme_image/1563358695(1).png)
 
 
 
