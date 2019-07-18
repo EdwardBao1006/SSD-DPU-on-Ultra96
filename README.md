@@ -16,7 +16,7 @@ https://www.xilinx.com/products/design-tools/ai-inference/ai-developer-hub.html#
 
 （2）用烧录软件进行镜像烧录
 
-![](.\readme_image\etcher.png)
+![](./readme_image/etcher.png)
 
 ​        点击Flash即可进行烧录，此过程有可能会出现烧录失败的现象，没关系，多烧录几次就好了，实在不行就需要更换SD卡。
 
@@ -32,13 +32,13 @@ https://www.xilinx.com/products/design-tools/ai-inference/ai-developer-hub.html#
 
 ​        在这里，我们选用第二种方式，手机开放热点，让笔记本和板卡同时连上笔记本网络。
 
-![](.\readme_image\wifi.jpg)
+![](./readme_image/wifi.jpg)
 
 笔记本SSH访问：
 
-![](.\readme_image\SSH_1.png)
+![](./readme_image/SSH_1.png)
 
-![](.\readme_image\SSH_2.png)
+![](./readme_image/SSH_2.png)
 
 ## 3. Ultra 96板卡安装DNNDK
 
@@ -46,11 +46,11 @@ https://www.xilinx.com/products/design-tools/ai-inference/ai-developer-hub.html#
 
 https://www.xilinx.com/products/design-tools/ai-inference/ai-developer-hub.html#overview
 
-![](.\readme_image\DNNDK_SDK.png)
+![](./readme_image/DNNDK_SDK.png)
 
 （2）解压安装包，通过SSH拷入Ultra_96板卡
 
-![](.\readme_image\sdk.jpg)
+![](./readme_image/sdk.jpg)
 
 注：解压后可以看到有两个压缩包，
 
@@ -81,7 +81,7 @@ chmod 777 install.sh
 
 
 
-![](.\readme_image\dnndk.png)
+![](./readme_image/dnndk.png)
 
 （3）查看DNNDK的安装版本
 
@@ -97,13 +97,13 @@ dexplorer --v
 tar zxvf XILINX_AI_SDK-Ultra96..tar.gz -C /
 ```
 
-![](.\readme_image\ultra96_sdk.png)
+![](./readme_image/ultra96_sdk.png)
 
 执行此条命令后，即可将压缩包中的库函数等文件分别解压到板子的\usr和\etc路径下。
 
 解压全部完成时，所有的.so文件均已部署。
 
-![](.\readme_image\sdk_success.png)
+![](./readme_image/sdk_success.png)
 
 
 
@@ -111,17 +111,17 @@ tar zxvf XILINX_AI_SDK-Ultra96..tar.gz -C /
 
 **（1）若SDK在解压的时候，出现存储不足的时候，用DiskGenius软件进行SD卡进行扩容。**
 
-![](.\readme_image\DiskGenius.png)
+![](./readme_image/DiskGenius.png)
 
 扩容前：
 
-![](.\readme_image\hl.png)
+![](./readme_image/hl.png)
 
 
 
 扩容后：
 
-![](.\readme_image\hl_2.png)
+![](./readme_image/hl_2.png)
 
 可参考教程：http://www.cubie.cc/forum.php?mod=viewthread&amp;tid=705
 
@@ -133,7 +133,7 @@ chmod 777 dexplorer
 dexplorer --v
 ```
 
-![](.\readme_image\dexplorer.png)
+![](./readme_image/dexplorer.png)
 
 即可查看DNNDK的版本号
 
@@ -258,7 +258,7 @@ cd $CAFFE_ROOT/examples/VOC0712_trainval_lmdb
 
 DNNDK的文件按照DNNDK_Project文件夹中的文件格式准备：
 
-![](.\readme_image\DNNDK_Project.png)
+![](./readme_image/DNNDK_Project.png)
 
 ### **（1） 拷入训练好的caffemode**        
 
@@ -352,7 +352,7 @@ sudo ./dnnc_ssd.sh
 
 进入板卡SSD文件夹，其文件分布如下所示：
 
-![](.\readme_image\SSD.png)
+![](./readme_image/SSD.png)
 
 文件及功能如下所示:
 
@@ -424,7 +424,7 @@ chmod 777 run.sh   # 如果是第一次执行
 ./stop.sh       # 程序结束
 ```
 
-![](C:\Users\baoch\Desktop\summer_pro\Ultra_96\readme_image\run_ssd.png)
+![](./readme_image/run_ssd.png)
 
 
 
@@ -432,7 +432,7 @@ chmod 777 run.sh   # 如果是第一次执行
 
 ​        除了上面我们自己写**源程序**、**Makefile**和**elf**来编译执行网络外，也可以利用镜像文件中连接库存储的模型和程序来调用执行。在SSD2文件夹中，我们利用了这种方法来实施SSD算法。
 
-![](.\readme_image\build.png)
+![](./readme_image/build.png)
 
 源程序（test_ssd_ADAS_PEDESTRIAN_640x360.cpp）如下：
 
@@ -555,5 +555,5 @@ chmod 777 build.sh
 ./ssd_test            #打开摄像头实时检测
 ```
 
-![](.\readme_image\result.jpg)
+![](./readme_image/result.jpg)
 
